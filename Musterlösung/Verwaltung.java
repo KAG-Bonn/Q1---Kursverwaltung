@@ -1,33 +1,22 @@
-public abstract class Verwaltung {
-    private Kurs[] kurse;
+/**
+ * Fügt einen neuen Kurs zur Verwaltung hinzu.
+ * Die konkrete Implementierung entscheidet, wie und wo der Kurs eingefügt wird.
+ *
+ * @param pKurs Der Kurs, der hinzugefügt werden soll.
+ */
+public abstract void kursHinzufuegen(Kurs pKurs);
 
-    public Verwaltung() {
-    }
-    public Verwaltung(Kurs[] pKurse) {
-        kurse = pKurse;
-    }
-    
-    public Kurs[] gibKurse() {
-        return kurse;
-    }
-    
-    public void setzeKurse(Kurs[] pKurse) {
-        kurse = pKurse;
-    }
-    
-    public void kurseAusgeben() {
-        for(int i = 0; i < kurse.length; i++) {
-            if(kurse[i] != null) {
-                System.out.println(kurse[i]);
-            }
-            else {
-                System.out.println("null");
-            }
-        }
-    };
-    
-    public abstract void kursHinzufuegen(Kurs pKurs);
-    public abstract void kursEntfernen(Kurs pKurs);
-    public abstract int gibAnzahlKurse();
-    
-}
+/**
+ * Entfernt einen Kurs aus der Verwaltung.
+ * Die konkrete Implementierung entscheidet, wie der Kurs identifiziert und entfernt wird.
+ *
+ * @param pKurs Der Kurs, der entfernt werden soll.
+ */
+public abstract void kursEntfernen(Kurs pKurs);
+
+/**
+ * Gibt die Anzahl der aktuell verwalteten Kurse zurück.
+ *
+ * @return Die Anzahl der Kurse im Kurs-Array.
+ */
+public abstract int gibAnzahlKurse();
