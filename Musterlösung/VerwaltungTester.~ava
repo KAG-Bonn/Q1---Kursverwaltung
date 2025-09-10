@@ -61,7 +61,7 @@ public class VerwaltungTester {
             Hier nur Listverwaltung
         */
         System.out.println("Hier die Listenverwaltung: ");
-        for(int i = 1; i <= pAnzahl; i++) {
+        for(int i = 1; i < pAnzahl; i++) {
             Kurs kurs = new Kurs("Kurs 3");
             if (i == 3) {
                 vl.kursHinzufuegen(kurs);

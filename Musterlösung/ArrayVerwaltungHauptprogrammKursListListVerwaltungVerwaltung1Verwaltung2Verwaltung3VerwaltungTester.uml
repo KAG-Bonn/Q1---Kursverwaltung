@@ -1,0 +1,137 @@
+﻿[Files]
+File0=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\ArrayVerwaltung.java
+File1=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\Hauptprogramm.java
+File2=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\Kurs.java
+File3=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\List.java
+File4=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\ListVerwaltung.java
+File5=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\Verwaltung1.java
+File6=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\Verwaltung2.java
+File7=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\Verwaltung3.java
+File8=\\gy166420\m.weber8\Dokumente\GitHub\Q1---Kursverwaltung\Musterlösung\VerwaltungTester.java
+
+[Box:  - ArrayVerwaltung]
+X=528
+Y=462
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Hauptprogramm]
+X=898
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Kurs]
+X=949
+Y=737
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - List$ListNode]
+X=20
+Y=462
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - List<ContentType>]
+X=26
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - ListVerwaltung]
+X=805
+Y=462
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Verwaltung1]
+X=169
+Y=737
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Verwaltung2]
+X=429
+Y=737
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - Verwaltung3]
+X=689
+Y=737
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Box:  - VerwaltungTester]
+X=587
+Y=40
+MinVis=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+FontSize=12
+FontName=Segoe UI
+
+[Diagram]
+comments=0
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowParameter=4
+SortOrder=0
+ShowIcons=1
+ShowConnections=0
+Fontname=Segoe UI
+Fontsize=12
+ShowObjectDiagram=0
+
+[Connections]
+V0=ArrayVerwaltung#Kurs#Aggregation####0#0#0###0#0
+V1=List<ContentType>#List$ListNode#AssociationDirected####0#0#0###0#0
+V2=ListVerwaltung#Kurs#Aggregation####0#0#0###0#0
+V3=Verwaltung1#ArrayVerwaltung#Inheritends####0#0#0###0#0
+V4=Verwaltung2#ArrayVerwaltung#Inheritends####0#0#0###0#0
+V5=Verwaltung3#ArrayVerwaltung#Inheritends####0#0#0###0#0
+V6=VerwaltungTester#ArrayVerwaltung#Aggregation####0#0#0###0#0
+V7=VerwaltungTester#ListVerwaltung#AssociationDirected####0#0#0###0#0
+
+[Interactive]
+I0=
+
