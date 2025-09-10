@@ -1,3 +1,13 @@
+public class Verwaltung {
+  private Kurs[] kurse;
+
+  /**
+ * Erstellt ein Objekt der Klasse Verwaltung.
+  */
+
+  public Verwaltung(){
+  }
+  
 /**
  * Fügt einen neuen Kurs zur Verwaltung hinzu.
  * Die konkrete Implementierung entscheidet, wie und wo der Kurs eingefügt wird.
@@ -20,3 +30,4 @@ public abstract void kursEntfernen(Kurs pKurs);
  * @return Die Anzahl der Kurse im Kurs-Array.
  */
 public abstract int gibAnzahlKurse();
+}
