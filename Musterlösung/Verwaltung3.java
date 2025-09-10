@@ -1,3 +1,7 @@
+/**
+ * Die Klasse Verwaltung3 implementiert eine speicheroptimierte Version zur Verwaltung von Kursen in einem Array
+ auf Kosten der Laufzeit - da beim Hinzufügen und Entfernen neuer Kurse Kopier-Operationen stattfinden.
+ */
 public class Verwaltung3 {
     /**
      * Konstruktor der Klasse Verwaltung3.
