@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hauptprogramm",
+            "request": "launch",
+            "mainClass": "Hauptprogramm",
+            "projectName": "Q1---Kursverwaltung_a847f8bd"
+        }
+    ]
+}

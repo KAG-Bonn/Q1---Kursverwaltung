@@ -1,14 +1,38 @@
 /**
  * Die Klasse ArrayVerwaltung beschreibt den geteilten Aufbau der Verwaltungs-Klassen.
  */
-public class ArrayVerwaltung {
+public abstract class ArrayVerwaltung {
   private Kurs[] kurse;
 
   /**
  * Erstellt ein Objekt der Klasse Verwaltung.
   */
 
-  public ArrayVerwaltung(){
+  public ArrayVerwaltung(Kurs[] pKurse){
+    kurse = pKurse;
+  }
+  
+  /**
+ * Gibt eine Referenz auf das Array kurse zurück.
+  */
+  public Kurs[] gibKurse(){
+    return kurse;
+  }
+
+  /**
+ * Setzt die Referenz kurse.
+  */
+  public void setzeKurse(Kurs[] pKurse){
+    kurse = pKurse;
+  }
+
+  /**
+ * Gibt alle Kursbeschreibungen aus.
+  */
+  public void kurseAusgeben(){
+    for(Kurs aktKurs : kurse) {
+      System.out.println(aktKurs);
+    }
   }
   
 /**

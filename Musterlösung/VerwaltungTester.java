@@ -4,11 +4,8 @@
  * führt standardisierte Testläufe durch.
  */
 public class VerwaltungTester {
-    private Verwaltung[] verwaltungen;
-    private Verwaltung v1;
-    private Verwaltung v2;
-    private Verwaltung v3;
-
+    private ArrayVerwaltung[] verwaltungen;
+    private ListVerwaltung vl;
     /**
      * Konstruktor der Klasse VerwaltungTester.
      * Initialisiert die Verwaltungstypen durch Aufruf von {@code reset()}.
@@ -22,10 +19,11 @@ public class VerwaltungTester {
      * Instanzen von Verwaltung1, Verwaltung2 und Verwaltung3.
      */
     public void reset() {
-        verwaltungen = new Verwaltung[3];
+        verwaltungen = new ArrayVerwaltung[3];
         verwaltungen[0] = new Verwaltung1();
         verwaltungen[1] = new Verwaltung2();
         verwaltungen[2] = new Verwaltung3();
+        vl = new ListVerwaltung();
     }
 
     /**
@@ -39,7 +37,10 @@ public class VerwaltungTester {
     public void test(int pAnzahl) {
         reset();
         int aktV = 1;
-        for (Verwaltung v : verwaltungen) {
+        /*
+            Hier nur Arrayverwaltungen
+        */
+        for (ArrayVerwaltung v : verwaltungen) {
             Kurs kurs = new Kurs("Kurs 3");
             for (int i = 1; i <= pAnzahl; i++) {
                 if (i == 3) {
@@ -55,5 +56,21 @@ public class VerwaltungTester {
             v.kurseAusgeben();
             aktV++;
         }
+
+        /*
+            Hier nur Listverwaltung
+        */
+        for(int i = 1; i < pAnzahl; i++) {
+            Kurs kurs = new Kurs("Kurs 3");
+            if (i == 3) {
+                vl.kursHinzufuegen(kurs);
+            } else {
+                if (i == 12) {
+                    vl.kursEntfernen(kurs);
+                }
+                vl.kursHinzufuegen(new Kurs("Kurs " + i));
+            }
+        }
+        vl.kurseAusgeben();
     }
 }

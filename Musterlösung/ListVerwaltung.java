@@ -5,6 +5,10 @@ public class ListVerwaltung {
         kurse = new List<Kurs>();
     }
 
+    public List<Kurs> gibKurse() {
+        return kurse;
+    }
+
     public void kursHinzufuegen(Kurs pKurs) {
         kurse.append(pKurs);
     }
@@ -21,11 +25,26 @@ public class ListVerwaltung {
             }
         }
     }
+
+    /**
+     * Gibt die Anzahl der aktuell verwalteten Kurse zurück.
+     *
+     * @return Die Anzahl der Kurse im Kurs-Array.
+    */
     public int gibAnzahlKurse(){
         int erg = 0;
         for(kurse.toFirst(); kurse.hasAccess(); kurse.next()) {
             erg++;
         }
         return erg;
+    }
+
+    /**
+     * Gibt alle Kursbeschreibungen aus.
+    */
+    public void kurseAusgeben(){
+        for(kurse.toFirst(); kurse.hasAccess(); kurse.next()) {
+            System.out.println(kurse.getContent());
+        }
     }
 }
