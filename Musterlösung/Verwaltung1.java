@@ -1,7 +1,7 @@
 /**
  * Die Klasse Verwaltung1 implementiert eine naive Version für das Hinzufügen und Entfernen von Kursen in einem Array.
  */
-public class Verwaltung1 {
+public class Verwaltung1 extends ArrayVerwaltung {
     /**
      * Konstruktor der Klasse Verwaltung1.
      * Initialisiert die Kursverwaltung mit einem Array von 10 Kursen.
