@@ -2,7 +2,7 @@
  * Die Klasse Verwaltung2 implementiert ein strukturiertes Array von Kursen. Im ersten Teil des Arrays sind die Objekte verwaltet,
  anschließend werden null-Einträge ergänzt.
  */
-public class Verwaltung2 {
+public class Verwaltung2 extends ArrayVerwaltung {
     /**
      * Konstruktor der Klasse Verwaltung2.
      * Initialisiert die Kursverwaltung mit einem Array von 10 Kursen.
