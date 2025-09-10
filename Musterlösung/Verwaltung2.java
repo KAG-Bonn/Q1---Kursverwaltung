@@ -1,3 +1,7 @@
+/**
+ * Die Klasse Verwaltung2 implementiert ein strukturiertes Array von Kursen. Im ersten Teil des Arrays sind die Objekte verwaltet,
+ anschließend werden null-Einträge ergänzt.
+ */
 public class Verwaltung2 {
     /**
      * Konstruktor der Klasse Verwaltung2.
