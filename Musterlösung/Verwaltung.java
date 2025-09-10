@@ -1,11 +1,14 @@
-public class Verwaltung {
+/**
+ * Die Klasse ArrayVerwaltung beschreibt den geteilten Aufbau der Verwaltungs-Klassen.
+ */
+public class ArrayVerwaltung {
   private Kurs[] kurse;
 
   /**
  * Erstellt ein Objekt der Klasse Verwaltung.
   */
 
-  public Verwaltung(){
+  public ArrayVerwaltung(){
   }
   
 /**
