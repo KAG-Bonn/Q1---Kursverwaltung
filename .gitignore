@@ -1,2 +1,5 @@
 # Ignoriere alle .class-Dateien
 *.class
+
+# Ignoriere vscode configs
+.vscode/
