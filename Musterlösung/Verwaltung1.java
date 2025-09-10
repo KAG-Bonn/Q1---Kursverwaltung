@@ -1,3 +1,6 @@
+/**
+ * Die Klasse Verwaltung1 implementiert eine naive Version für das Hinzufügen und Entfernen von Kursen in einem Array.
+ */
 public class Verwaltung1 {
     /**
      * Konstruktor der Klasse Verwaltung1.
